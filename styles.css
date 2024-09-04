@@ -1,0 +1,154 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: #f0f0f0;
+}
+
+/* Loading Bar */
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #7160e8;
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        left: -100%;
+        width: 100%;
+    }
+    50% {
+        left: 25%;
+        width: 50%;
+    }
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 20px 0;
+}
+
+
+.logo {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    background-color: #865fc5;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px; /* Set desired size of the icon */
+    user-select: none; /* Prevent text selection */
+}
+
+.logo::before {
+    user-select: none; /* Prevent text selection */
+    font-family: "Font Awesome 6 Free"; /* Adjust depending on the library you are using */
+    font-weight: 900; /* May be required for Font Awesome Free */
+}
+/* Download Section */
+.download-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.download-item {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.download-info h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #cccccc;
+}
+
+.info-button {
+    background-color: transparent;
+    border: none;
+    color: #cccccc;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.download-link {
+    text-decoration: none;
+}
+
+.download-button {
+    background-color: #7160e8;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #242424;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+.download-button:hover {
+    background-color: #865fc5;
+    color: #f0f0f0;
+}
+
+.signatures {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signatures span {
+    display: block;
+    margin-top: 5px;
+    color: #cccccc;
+}
+
+/* Verification Icons */
+.verif-icon,
+.invalid-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.verif-icon {
+    color: #92e492;
+}
+
+.invalid-icon {
+    color: red;
+}

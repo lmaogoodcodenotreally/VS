@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="All Visual Studio Right Now!">
+    <meta property="og:description" content="Every VS versions but without having to navigate through cringe pages & login portals. Don't tell m$oft.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/lmaogoodcodenotreally/VS/main/logo.png">
+    <meta property="og:url" content="https://example.com/page-url">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="All Visual Studio Right Now!">
+    <title>VS NOW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-bar"></div>
+    <div class="header">
+        <div class="logo">
+            <i class="fa-solid fa-terminal">0</i>
+        </div>
+    </div>
+    <div class="download-section">
+        <div class="download-item">
+            <div class="download-info">
+                <h3>
+                    <span class="verif-icon">✔</span> Visual Studio 2022
+                </h3>
+                <button class="info-button" onclick="toggleInfo(this)">Info</button>
+            </div>
+            <a href="https://visualstudio.microsoft.com/fr/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030" class="download-link">
+                <button class="download-button">Download</button>
+            </a>
+            <div class="signatures">
+                <span class="file"><code>filename = VisualStudioSetup.exe</code></span>
+                <span class="SHA-256"><code>⠀SHA-256 = 801bdae005bfb0335e7e365559900bc25c18b77fff5935441155156d547739ba</code></span>
+                <span class="MD5"><code>⠀ ⠀# MD5 = 1f9559eb2be3f0b6574712d061a3c98c</code></span>
+            </div>
+        </div>
+
+        <div class="download-item">
+            <div class="download-info">
+                <h3>
+                    <span class="verif-icon">✔</span> Visual Studio 2019
+                </h3>
+                <button class="info-button" onclick="toggleInfo(this)">Info</button>
+            </div>
+            <a href="https://download.visualstudio.microsoft.com/download/pr/688bfe72-1be2-4765-bba6-06f7db68961c/b97e792d6d35a9e95ca5a183711da2a2a8b6b4de7825422e11b9333210793040/vs_Community.exe" class="download-link">
+                <button class="download-button">Download</button>
+            </a>
+            <div class="signatures">
+                <span class="file"><code>filename = vs_Community.exe</code></span>
+                <span class="SHA-256"><code>⠀SHA-256 = b97e792d6d35a9e95ca5a183711da2a2a8b6b4de7825422e11b9333210793040</code></span>
+                <span class="MD5"><code>⠀ ⠀# MD5 = d260e52207a761691abf634fc5024e18</code></span>
+            </div>
+        </div>
+
+        <div class="download-item">
+            <div class="download-info">
+                <h3>
+                    <span class="verif-icon">✔</span> Visual Studio 2017
+                </h3>
+                <button class="info-button" onclick="toggleInfo(this)">Info</button>
+            </div>
+            <a href="https://download.visualstudio.microsoft.com/download/pr/a589b951-308d-46f3-a3b3-b2df43dbdd3d/5e3f9d244e7813a1826dbea886cc1440/vs_community.exe" class="download-link">
+                <button class="download-button">Download</button>
+            </a>
+            <div class="signatures">
+                <span class="file"><code>filename = vs_community.exe</code></span>
+                <span class="SHA-256"><code>⠀SHA-256 = 52e87b75d4fa2d0e1f5d5a2998cbbe4e0fcb3a0e30090130d6707c59ac8df451</code></span>
+                <span class="MD5"><code>⠀ ⠀# MD5 = e14252b6ed691b9b060f5778ce916078</code></span>
+            </div>
+        </div>
+
+        <div class="download-item">
+            <div class="download-info">
+                <h3>
+                    <span class="invalid-icon">✘ Soon</span> Visual Studio 2015
+                </h3>
+                <button class="info-button" onclick="toggleInfo(this)">Info</button>
+            </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="download-link">
+                <button class="download-button">Download</button>
+            </a>
+            <div class="signatures">
+                <span class="file"><code>filename = N/A</code></span>
+                <span class="SHA-256"><code>⠀SHA-256 = N/A</code></span>
+                <span class="MD5"><code>⠀ ⠀# MD5 = N/A</code></span>
+            </div>
+        </div>
+
+        <div class="download-item">
+            <div class="download-info">
+                <h3>
+                    <span class="invalid-icon">✘ Soon</span> Visual Studio 2015
+                </h3>
+                <button class="info-button" onclick="toggleInfo(this)">Info</button>
+            </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="download-link">
+                <button class="download-button">Download</button>
+            </a>
+            <div class="signatures">
+                <span class="file"><code>filename = N/A</code></span>
+                <span class="SHA-256"><code>⠀SHA-256 = N/A</code></span>
+                <span class="MD5"><code>⠀ ⠀# MD5 = N/A</code></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(button) {
+            const signatures = button.parentElement.nextElementSibling.nextElementSibling;
+            signatures.style.display = signatures.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
