@@ -17,7 +17,7 @@
     <div class="loading-bar"></div>
     <div class="header">
         <div class="logo">
-            <i class="fa-solid fa-terminal">0</i>
+            <i class="fa-solid fa-terminal" id="logo-digit">0</i>
         </div>
     </div>
     <div class="download-section">
@@ -112,6 +112,23 @@
             const signatures = button.parentElement.nextElementSibling.nextElementSibling;
             signatures.style.display = signatures.style.display === 'block' ? 'none' : 'block';
         }
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function randomizeLogo() {
+            const logoDigit = document.getElementById('logo-digit');
+            const originalText = '0';
+            const newText = logoDigit.textContent === originalText ? '‹' : originalText;
+            logoDigit.textContent = newText;
+            const delay = getRandomInt(200, 2000);
+            setTimeout(randomizeLogo, delay);
+        }
+
+        window.onload = function() {
+            randomizeLogo();
+        };
     </script>
 </body>
 </html>
